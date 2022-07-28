@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        main {
+            background-color: rgb(75, 75, 196);
+            display:block;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+        button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <meta name="description" content="FORMULÁRIO">
+    <link rel="icon" href="http://www.kenzie.com.br/favicon.jpeg">
+</head>
+<body>
+    <main>
+        <h2>Registro</h2>
+        <form>
+            <section class="nome">
+                <section>
+                    <label for="nome"><h4>Escreva seu nome</h4></label>  
+                </section>
+                <input type="text" name="nome" id="nome" placeholder="nome:" required>
+            </section>
+
+            <section class="apague">
+                <section class="apague">
+                    <button type="reset">Apague</button>
+                </section>
+                <label for="sobrenome" id="sobrenome"><h4>Escreva seu Sobrenome</h4></label>
+            </section>
+            <section>
+                <section>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome:" required>
+                </section>
+                <button type="reset">Apague</button>
+            </section>
+                <section>            
+                    <textarea name="sobre" id="sobre" cols="20" rows="10" placeholder="Conte sobre você..."></textarea>
+                </section>
+            <section>
+                <label for="modulos" id="modulos"><h4>Qual o seu modulo:</h4> </label>
+                <select name="modulos" id="modulos">
+                    <option value="modulo 1">modulo 1</option>
+                    <option value="modulo 2">modulo 2</option>
+                    <option value="modulo 3">modulo 3</option>
+                    <option value="modulo 4">modulo 4</option>
+                    <option value="modulo 5">modulo 5</option>
+                    <option value="modulo 6">modulo 6</option>
+                </select>
+            </section>
+            <section>
+                <section>
+                    <label for="senha" id="senha"><h4>Escreva sua senha:</h4></label>
+                </section>
+                <input type="password" name="senha" id="senha" placeholder="Senha:" required>
+            </section>
+            <section>
+                <section>
+                    <label for="senhacon" id="senhacon"><h4>Confirme sua Senha:</h4> </label>
+                </section>
+                <input type="password" name="senhacon" id="senhacon" placeholder="Confirme:" required>
+            </section>
+            <section>
+                <section>
+                    <label for="news" id="news"><h3>Deseja Receber Promoções?</h3></label>
+                </section>
+                <input type="radio" name="escolha" id="sim" value="sim">
+                <label for="sim" id="sim">Sim</label>
+                <input type="radio" name="escolha" id="nao" value="nao">
+                <label for="nao" id="nao">Não</label>
+            </section>
+            <section>            
+                <button type="submit" id="enviar" onclick="alert('Enviado Com Sucesso!')">Enviar</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
